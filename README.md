@@ -1,3 +1,3 @@
-# Docusaurus 插件文档模板
+# PowerfulFirework 插件文档
 
-[点击查看](https://postyizhan.github.io/Wiki-Template/)
+[点击查看](https://jlxnb.github.io/PowerfulFireworkWiki/)
