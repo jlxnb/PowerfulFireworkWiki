@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'PowerfulFireworkWiki',
-  tagline: '富有力量的烟花火箭官方文档(大雾',
+  tagline: '富有力量的烟花 官方文档(大雾',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
