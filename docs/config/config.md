@@ -8,24 +8,32 @@ sidebar_position: 100
 ## config.yml
 
 ```yaml
+
+#不需要更改此值
 config-version: 0.0.1
 
+#是否启用调试模式
 debug: false
 
+#随机烟花配置, 即:对于每个玩家, 在他的四周随机燃放烟花的配置
 random-firework:
+  #是否启用这一项功能
+  enabled: true
+  #两次烟花的随机间隔, 这一项会决定烟花的密度 单位:tick
   min-delay: 10
   max-delay: 20
+  #是否自动调节烟花的随机燃放位置?
+  #自动调节:即根据当前服务器视觉距离设置烟花燃放半径
   automatic-distance: true
+  #自定义燃放半径 单位:格
   distance: 20
+  #烟花飞行的时间, 单位:tick
   min-fly-time: 70
   max-fly-time: 120
 
+#加载的字体列表
 fonts:
   example: example.bdf
-```
-- **config-version** 不需要更改此值
-- **debug** 启用调试模式
-- **fonts** 字体加载列表，从 `fonts` 文件夹搜索，支持格式和已测试字体见 [字体](fonts.md)
 
 ## 烟花流程配置
 
