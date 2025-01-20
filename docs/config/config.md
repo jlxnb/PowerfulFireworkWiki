@@ -34,6 +34,7 @@ random-firework:
 #加载的字体列表
 fonts:
   example: example.bdf
+```
 
 ## 烟花流程配置
 
