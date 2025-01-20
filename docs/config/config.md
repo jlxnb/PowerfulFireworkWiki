@@ -70,6 +70,7 @@ nodes:
 
   - type: "text"
     text: "Minecraft"
+    flyTime: 20
     rotate: false
     preset: a
     gap: 1
