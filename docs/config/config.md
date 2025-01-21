@@ -20,16 +20,18 @@ random-firework:
   #是否启用这一项功能
   enabled: true
   #两次烟花的随机间隔, 这一项会决定烟花的密度 单位:tick
-  min-delay: 10
-  max-delay: 20
+  delay:
+    minimum: 10
+    maximum: 20
   #是否自动调节烟花的随机燃放位置?
   #自动调节:即根据当前服务器视觉距离设置烟花燃放半径
   automatic-distance: true
   #自定义燃放半径 单位:格
   distance: 20
   #烟花飞行的时间, 单位:tick
-  min-fly-time: 70
-  max-fly-time: 120
+  fly-time:
+    maximum: 30
+    minimum: 70
 
 #加载的字体列表
 fonts:
