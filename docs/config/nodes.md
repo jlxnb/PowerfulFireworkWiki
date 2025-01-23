@@ -1,6 +1,6 @@
 ---
 title: 流程节点
-sidebar_position: 11
+sidebar_position: 102
 ---
 
 # 流程节点
@@ -9,36 +9,34 @@ sidebar_position: 11
 在大部分节点中的通用部分
 ```yaml
 type: "original"
-preset: "a"
 ```
 - **type** 节点类型，使用下方的值覆盖
-- **preset** 使用的预设，部分节点不使用此值
 
 ## 对于烟花的通用内容
 飞行时间
 ```yaml
+presets: [a, b] #注意:此处presets不是区间!
 flyTime: 20
 ```
 - **flyTime** 烟花飞行时间，默认为 `0` ，即瞬爆
+- **presets** 预设选取表，填写先前在流程配置中定义的预设 ID，**留空则为随机烟花**
 
 ## 正常烟花
-简单播放单个预设
+普普通通的烟花
 ```yaml
 type: "original"
 count: 1
 xOff:
-  - maximum: 1.0
-  - minimum: 0.0
+  minimum: 0.0
+  maximum: 1.0
 yOff: [0.0, 1.0]
 zOff: 1.0
-presets: [a, b]
 ```
-- **xOff, yOff, zOff** 烟花偏移量，默认为0.0，区间表示随机选取
-- **presets** 预设选取表，填写先前在流程配置中定义的预设 ID，留空则为随机烟花
+- **xOff, yOff, zOff** 烟花偏移量，默认为0.0，用区间表示，详见[区间](interval.md)
 - **count** 烟花数量，默认为1
 
 ## 等待
-从上个节点开始等待一段时间后再继续流程，此节点不使用 `preset` 值
+从上个节点开始，等待一段时间后，再继续流程
 ```yaml
 type: "wait"
 ticks: 20
@@ -73,7 +71,7 @@ face: "EAST"
   - `SOUTH_WEST`
 
 ## 引用
-引用其他烟花流程，不使用 `preset` 值
+引用其他流程节点
 ```yaml
 type: "reference"
 target: "example"
