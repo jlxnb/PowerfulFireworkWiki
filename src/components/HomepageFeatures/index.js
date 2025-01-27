@@ -4,11 +4,11 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: '简单易用',
+    title: '超高性能',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        就这点配置有啥难的.
+        烟花均为发包实现
       </>
     ),
   },
@@ -17,12 +17,12 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        看完文档学不会怎么用说明你是个傻逼.
+        喵喵喵？
       </>
     ),
   },
   {
-    title: '功能强大',
+    title: '配置自由',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
