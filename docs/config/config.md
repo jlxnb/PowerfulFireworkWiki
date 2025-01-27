@@ -4,7 +4,7 @@ sidebar_position: 100
 ---
 
 # 配置文件
-
+配置系统可能后续会有较大更改, 更新插件时请注意及时查看wiki和更新日志
 ## config.yml
 
 ```yaml
@@ -30,6 +30,22 @@ random-firework:
   # 因此默认配置文件中加入了world_nether
   blacklist-worlds:
     - world_nether
+  # 是否在随机烟花加入随机文字 (实验性功能)
+  text:
+    # 是否启用
+    enabled: true
+    # 文字大小, 详见config/nodes.md中的对应内容
+    size: 1.0
+    # 字体, 详见config/nodes.md中的对应内容
+    font: example
+    # 文字, 字符串形式
+    texts:
+      - Hello World!
+      - AWA
+    # 文字间隔, 详见config/nodes.md中的对应内容
+    gap: 1
+    # 出现文字的概率, 单位: 1
+    chance: 0.5
 # 字体列表
 # 键为text类型节点中font选项填写的内容
 # 值为fonts下的文件名
