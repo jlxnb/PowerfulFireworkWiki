@@ -25,6 +25,10 @@ random-firework:
   # 烟花燃放距离
   # 启用automatic-distance后，该距离自动失效
   distance: 20
+  # 单次燃放的个数
+  number:
+    minimum: 3
+    maximum: 5
   # 禁用的世界
   # 在下界中，random-firework会声称在在顶层基岩上
   # 因此默认配置文件中加入了world_nether
