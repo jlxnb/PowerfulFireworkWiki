@@ -41,3 +41,12 @@ sidebar_position: 2
 切换随机烟花模块 开/关 状态
 
 推荐授予玩家本权限
+
+### `/firework item <流程名>`
+权限：`powerfulfireworks.cmd.fireworks.item`
+
+获取关于燃放某个烟花的物品
+
+需要加载前置插件 NBTAPI
+
+右键对应物品即可燃放对应烟花
