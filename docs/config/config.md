@@ -4,7 +4,6 @@ sidebar_position: 100
 ---
 
 # 配置文件
-配置系统可能后续会有较大更改, 更新插件时请注意及时查看wiki和更新日志
 ## config.yml
 
 ```yaml
@@ -64,6 +63,8 @@ fonts:
 ```yaml
 # 当前流程配置的ID，用于在游戏中燃放，不能与其他流程重复
 id: "test"
+# 是否允许通过物品燃放。具体参考“命令”章节
+allowActivationByItems: true
 
 # 预设烟花，具体见下方的详解
 presets:
