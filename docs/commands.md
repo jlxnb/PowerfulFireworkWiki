@@ -42,11 +42,9 @@ sidebar_position: 2
 
 推荐授予玩家本权限
 
-### `/firework item <流程名>`
+### `/firework item [scheduler]`
 权限：`powerfulfireworks.cmd.fireworks.item`
 
-获取关于燃放某个烟花的物品
+获取燃放某个烟花的物品。右键该物品可运行对应烟花流程节点。
 
-需要加载前置插件 NBTAPI
-
-右键对应物品即可燃放对应烟花
+需要在对应流程节点的配置文件中配置。
